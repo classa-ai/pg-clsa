@@ -1,11 +1,11 @@
-FROM ghcr.io/railwayapp-templates/postgres-ssl:16.11
+FROM ghcr.io/railwayapp-templates/postgres-ssl:17.5
 
 RUN apt-get update && apt-get install -y \
-    postgresql-16-postgis-3 \
-    postgresql-16-postgis-3-scripts \
+    postgresql-17-postgis-3 \
+    postgresql-17-postgis-3-scripts \
     build-essential \
     git \
-    postgresql-server-dev-16 \
+    postgresql-server-dev-17 \
     ca-certificates \
  && rm -rf /var/lib/apt/lists/*
 
