@@ -1,4 +1,4 @@
-FROM ghcr.io/railwayapp-templates/postgres-ssl:17.5
+FROM ghcr.io/railwayapp-templates/postgres-ssl:17
 
 RUN apt-get update && apt-get install -y \
     postgresql-17-postgis-3 \
